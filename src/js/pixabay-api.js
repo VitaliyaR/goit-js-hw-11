@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_KEY = '50344127-726c85bb6f98eba42715a8612'; // Заміни на свій ключ
+const API_KEY = '50344127-726c85bb6f98eba42715a8612'; // ключ 
 
 export const getImagesByQuery = async (query) => {
   try {

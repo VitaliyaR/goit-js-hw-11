@@ -6,7 +6,6 @@ import { createGallery, clearGallery, showLoader, hideLoader } from './js/render
 import iziToast from 'izitoast';
 import "izitoast/dist/css/iziToast.min.css";
 
-
 const form = document.querySelector('.form');
 const input = form.querySelector('input[name="search-text"]');
 

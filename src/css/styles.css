@@ -9,19 +9,28 @@
 @import url('./reset.css');
 @import url('./base.css');
 
+
+
+
+
+
 /* Стилі для контейнера галереї */
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* рівномірно розподіляє картки */
+  justify-content: space-between; 
   gap: 20px;
   padding: 0;
   list-style-type: none;
+  margin-top: 15px ;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 /* Стилі для кожної картки */
 .gallery-item {
-  flex: 0 0 calc(20% - 20px); /* 5 карток у ряд (100% / 5 - відступи) */
+  flex: 0 0 calc(33.333% - 20px);
+  /*flex: 0 0 calc(20% - 20px); /* 5 карток у ряд (100% / 5 - відступи) */
   box-sizing: border-box;
   border-radius: 8px;
   overflow: hidden;
@@ -30,7 +39,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Стилі для зображення */
 .gallery-image {
   width: 100%;
   height: 150px;
@@ -38,21 +46,27 @@
   display: block;
 }
 
-/* Стилі для контейнера з інформацією */
 .image-info {
-  padding: 15px;
+  padding: 10px 0;
   text-align: center;
   font-size: 14px;
   font-family: Arial, sans-serif;
   color: #333;
+}
+
+.info-labels,
+.info-values {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  gap: 10px;
 }
 
-/* Для покращення читабельності */
-.image-info p {
-  margin: 5px 0;
+.info-labels span,
+.info-values span {
+  flex: 1;
+  text-align: center;
 }
 
+.info-labels span {
+  font-weight: bold;
+}

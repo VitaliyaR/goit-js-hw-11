@@ -13,7 +13,7 @@
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; 
+  justify-content: space-between; /* рівномірно розподіляє картки */
   gap: 20px;
   padding: 0;
   list-style-type: none;
@@ -21,7 +21,7 @@
 
 /* Стилі для кожної картки */
 .gallery-item {
-  flex: 0 0 calc(20% - 20px); 
+  flex: 0 0 calc(20% - 20px); /* 5 карток у ряд (100% / 5 - відступи) */
   box-sizing: border-box;
   border-radius: 8px;
   overflow: hidden;
@@ -55,3 +55,4 @@
 .image-info p {
   margin: 5px 0;
 }
+
